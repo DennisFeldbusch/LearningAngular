@@ -1,0 +1,33 @@
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <button mat-icon-button>
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        </button>
+
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+
+            <li>
+                <a href="/table" class="nav-link"></a>
+            </li>
+            <li>
+                <a *ngIf="isLoggedIn" class="nav-link" href="/logout" (click)=handleLogout()>Logout</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<mat-sidenav-container style="position: unset;">
+    <mat-sidenav #sidenav>
+        <mat-nav-list>
+
+            <a mat-list-item [routerLink]="'/table'"> Mannschaften </a>
+            <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+
+        </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+
+
+        <router-outlet></router-outlet>
+
+    </mat-sidenav-content>
+</mat-sidenav-container>

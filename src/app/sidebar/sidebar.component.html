@@ -1,0 +1,13 @@
+<mat-sidenav-container>
+  <mat-sidenav #sidenav>
+    <mat-nav-list>
+
+      <a mat-list-item [routerLink]="'/table'"> Mannschaften </a>
+      <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+
+  </mat-sidenav-content>
+</mat-sidenav-container>
