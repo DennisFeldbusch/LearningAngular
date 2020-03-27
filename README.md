@@ -100,7 +100,7 @@ Sinnvoll ist es, hierfür ein Ordner `services` zu erstellen, in dem alle Servic
 
 ## Authorization
 
-Best practice für authorization ist JWT.
+Best practice für authorization ist [JWT](https://jwt.io/introduction/).
 
 Dieser Token muss vom Backend erstellt werden und nach erfolgreichem Login an das Frontend (Angular) geschickt werden.
 
