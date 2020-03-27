@@ -1,5 +1,6 @@
-#Angular
-##Installation
+# Angular
+
+## Installation
 Um mit Angular beginnen zu können wird Node.js und dessen Package Manager NPM benötigt.
 
 Mit 
@@ -29,7 +30,7 @@ Normalerweise sollten dadurch auch die Umgebungsvariablen automatisch gesetzt we
 ```
 
 
-##Projekt erstellen
+## Projekt erstellen
 Mit 
 ```
 ng new [projectname] [options] 
@@ -47,7 +48,7 @@ CSS
 ``` 
 als stylesheet format nehmen.
 
-##Projekt einbinden
+## Projekt einbinden
 
 Wenn man ein Angular aus einem Repository auscheckt, sollte man zunächst 
 ```
@@ -56,14 +57,14 @@ npm install
 ausführen.
 Dadurch werden alle im Projekt verwendeten Abhängigkeiten heruntergeladen und in dem Ordner node_modules gespeichert. Dieser wird nicht mit ins Repository eingecheckt.
 
-##VS Code
+## VS Code
 Da Eclipse, nur durch kostenpflichtige oder mMn schlechten Plugins, Angular fähig wird und Syntax Highlighting uvm. unterstützt, benutze ich an dieser Stelle [VS Code](https://code.visualstudio.com/), welches ohne weitere Plugins bereits alle erforderlichen Features beinhaltet.
 
-##Angular [Architektur](https://t3n.de/magazin/datenmodellierung-angular-architektur-angluar-applikation-242317/)
+## Angular [Architektur](https://t3n.de/magazin/datenmodellierung-angular-architektur-angluar-applikation-242317/)
 Angular ist durch Komponenten aufgebaut, welche sich kombinieren lassen. 
 Dadurch ist Angular baumartig aufgebaut.
 
-##Was ist eine Komponente?
+## Was ist eine Komponente?
 Komponenten sind in Angular eine Art Baustein. Aus den Bausteinen wird dann schließlich die Oberfläche samt Logik zusammengebaut.
 Eine Komponente besteht aus bis zu 4 Dateien
 * TypeScript Datei (enthält die Logik)
@@ -79,7 +80,7 @@ Der selector ist in der jeweiligen TypeScript Datei unter dem Eintrag
 `selector: '...'`
 angegeben.
 
-##Komponente erzeugen
+## Komponente erzeugen
 Um eine neue Komponente zu erstellen ist der Befehl 
 
 ```
@@ -92,12 +93,12 @@ Dadurch wird im src/app Ordner ein Ordner mit dem angegebenem Komponenten Namen 
 Des weiteren wird die Komponente in der `app.module.ts` eingetragen.
 Dort müssen alle Komponenten als auch externe Librarys eingetragen werden.
 
-##API einbinden
+## API einbinden
 Um gebrauch von einer Api bzw. eines Backends zu machen ist ein Service erforderlich.
 
 Sinnvoll ist es, hierfür ein Ordner `services` zu erstellen, in dem alle Service Dateien abgelegt werden können.
 
-##Authorization
+## Authorization
 
 Best practice für authorization ist JWT.
 
@@ -105,7 +106,7 @@ Dieser Token muss vom Backend erstellt werden und nach erfolgreichem Login an da
 
 Danach muss das Frontend(Angular) diesen im Local Storage persistiern und bei jeder weiteren Anfrage an des Backend mitschicken. 
 
-##!Erweitern!
+## !Erweitern!
 
 Was muss ich tun um eine neue API einzubinden bzw eine neue Seite zu erstellen?
 
@@ -118,11 +119,10 @@ Was muss ich tun um eine neue API einzubinden bzw eine neue Seite zu erstellen?
 7. in der `app-routing.module.ts` die Component mit dem gewünschten Pfad eintragen `{path: 'table', component: TableComponent}`, damit sie erreichbar ist
 8. OPTIONAL: den link in der Menu HTML eintragen, dass die Seite dort aufrufbar ist
 
-##Wichtige Angular Befehle
+## Wichtige Angular Befehle
 https://angular.io/cli#command-overview
 ```
 ng serve
 ng build (wird auch für Docker benötigt)
 ng generate
-ng  
 ```
