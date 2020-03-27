@@ -9,8 +9,8 @@ export const routes: Routes = [
   {path: 'login', component: LoginComponent},
   // wenn man kein EP angibt wird man zur Table Seite weitergeleitet, sofern man angemeldet ist
   // ansonsten kommt man zur Login Seite (ist im AuthGuard implementiert)
-  {path: '', component: TableComponent /*, canActivate: [AuthGuard]*/},
-  {path: 'table', component: TableComponent /*, canActivate: [AuthGuard]*/},
+  {path: '', component: TableComponent , canActivate: [AuthGuard]},
+  {path: 'table', component: TableComponent , canActivate: [AuthGuard]},
   {path: 'logout', component: LoginComponent},
 ];
 

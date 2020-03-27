@@ -38,18 +38,15 @@ export class AuthenticationService {
       // observe: 'response' as 'body'
   };
 
-    return this.http.post('http://www.mocky.io/v2/5e7c9407350000df05069285', JSON.stringify({ username, password }), httpOptions)
+    return this.http.post('http://www.mocky.io/v2/5e7e058c300000e0134af8a3', JSON.stringify({ username, password }), httpOptions)
       .pipe(map((resp: ResponseBody) => {
         // local vs session: https://stackoverflow.com/a/5523174
         // get token and expiration Date
         this.accesstoken = resp.Authorization;
-        alert('');
         // store token and expiration Date in local storage
-        localStorage.setItem(this.tokenStr, this.accesstoken);
+        localStorage.setItem(this.tokenStr, resp.Authorization);
       }));
   }
-
-
 
   /**
    * remove token and expiration Date from local storage
