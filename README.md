@@ -111,7 +111,7 @@ Danach muss das Frontend(Angular) diesen im Local Storage persistiern und bei je
 Was muss ich tun um eine neue API einzubinden bzw eine neue Seite zu erstellen?
 
 1. Model der API erstellen und im models Ordner ablegen
-2. neuen Service in dem service Ordner erstellen
+2. neuen Service mit `ng generate service table` in dem service Ordner erstellen
 3. mit `ng generate component table` eine neue Component erstellen
 4. den Service im constructor des Components deklarieren `constructor(private tableService: TableService) {  }`
 5. eine Methode in der Component schreiben, welche den service aufruft `this.tableService.getData()` und in der subscribtion die gewünschte variable zuweist
