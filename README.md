@@ -95,7 +95,7 @@ Dort müssen alle Komponenten als auch externe Librarys eingetragen werden.
 ## API einbinden
 Um gebrauch von einer Api bzw. eines Backends zu machen ist ein Service erforderlich.
 
-Sinnvoll ist es, hierfür ein Ordner `services` zu erstellen, in dem alle Service Dateien abgelegt werden können.
+Sinnvoll ist es, hierfür ein Ordner `services` zu erstellen, in dem alle Service Dateien mit `ng generate service [Servicename]` generiert werden können.
 
 ## Authorization
 
