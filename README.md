@@ -29,7 +29,6 @@ Normalerweise sollten dadurch auch die Umgebungsvariablen automatisch gesetzt we
 ..\Program Files\nodejs
 ```
 
-
 ## Projekt erstellen
 Mit 
 ```
