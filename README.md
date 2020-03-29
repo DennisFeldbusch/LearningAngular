@@ -59,6 +59,26 @@ Dadurch werden alle im Projekt verwendeten Abhängigkeiten heruntergeladen und i
 ## VS Code
 Da Eclipse, nur durch kostenpflichtige oder mMn schlechten Plugins, Angular fähig wird und Syntax Highlighting uvm. unterstützt, benutze ich an dieser Stelle [VS Code](https://code.visualstudio.com/), welches ohne weitere Plugins bereits alle erforderlichen Features beinhaltet.
 
+## Angular Projekt Struktur
+
+* e2e: Alle Automationstests kommen in diesen Ordner.
+
+* node_modules: Enthält alle Dependencies(Abhängigkeiten).
+
+* src: Enthält sämtlichen app source code (z.B. index.html, unit tests, assets, etc.)
+
+* .editorconfig: Editor Konfigurationen
+
+* .gitignore: Enthält alle Dateien, die nicht in git berücksichtigt werden sollen.
+
+* angular.json: Enthält alle Informationen über das Projekt (z.B. Build Beschreibung, Konfigurationen, ...)
+
+* package.json: Package Manager welcher alle Abhängigkeiten und scripts enthält.
+
+* tsconfig.json: Enthält alle TypeScript Konfigurationen.
+
+* tslint.json: Enthält die TSLint Regeln (Formatting Regeln)
+
 ## Angular [Architektur](https://t3n.de/magazin/datenmodellierung-angular-architektur-angluar-applikation-242317/)
 Angular ist durch Komponenten aufgebaut, welche sich kombinieren lassen. 
 Dadurch ist Angular baumartig aufgebaut.
