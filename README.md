@@ -35,7 +35,7 @@ Mit
 ng new [projectname] [options] 
 ```
 in dem gewünschten Verzeichnis kann ein neues Projekt anlegt werden.
-[Hier](https://angular.io/cli#command-overview) ist eine liste mit den möglichen Optionen.
+[Hier](https://angular.io/cli/new) ist eine liste mit den möglichen Optionen.
 
 Danach die Frage ob AngularRouting aktiviert werden soll mit  
 ```
@@ -93,7 +93,7 @@ Des weiteren wird die Komponente in der `app.module.ts` eingetragen.
 Dort müssen alle Komponenten als auch externe Librarys eingetragen werden.
 
 ## API einbinden
-Um gebrauch von einer Api bzw. eines Backends zu machen ist ein Service erforderlich.
+Um Gebrauch von einer Api bzw. eines Backends machen zu können, ist ein Service erforderlich.
 
 Sinnvoll ist es, hierfür ein Ordner `services` zu erstellen, in dem alle Service Dateien mit `ng generate service [Servicename]` generiert werden können.
 
