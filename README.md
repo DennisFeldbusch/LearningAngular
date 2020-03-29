@@ -61,23 +61,23 @@ Da Eclipse, nur durch kostenpflichtige oder mMn schlechten Plugins, Angular fäh
 
 ## Angular Projekt Struktur
 
-* e2e: Alle Automationstests kommen in diesen Ordner.
+* **e2e**: Alle Automationstests kommen in diesen Ordner.
 
-* node_modules: Enthält alle Dependencies(Abhängigkeiten).
+* **node_modules**: Enthält alle Dependencies(Abhängigkeiten).
 
-* src: Enthält sämtlichen app source code (z.B. index.html, unit tests, assets, etc.)
+* **src**: Enthält sämtlichen app source code (z.B. index.html, unit tests, assets, etc.)
 
-* .editorconfig: Editor Konfigurationen
+* **.editorconfig**: Editor Konfigurationen
 
-* .gitignore: Enthält alle Dateien, die nicht in git berücksichtigt werden sollen.
+* **.gitignore**: Enthält alle Dateien, die nicht in git berücksichtigt werden sollen.
 
-* angular.json: Enthält alle Informationen über das Projekt (z.B. Build Beschreibung, Konfigurationen, ...)
+* **angular.json**: Enthält alle Informationen über das Projekt (z.B. Build Beschreibung, Konfigurationen, ...)
 
-* package.json: Package Manager welcher alle Abhängigkeiten und scripts enthält.
+* **package.json**: Package Manager welcher alle Abhängigkeiten und scripts enthält.
 
-* tsconfig.json: Enthält alle TypeScript Konfigurationen.
+* **tsconfig.json**: Enthält alle TypeScript Konfigurationen.
 
-* tslint.json: Enthält die TSLint Regeln (Formatting Regeln)
+* **tslint.json**: Enthält die TSLint Regeln (Formatting Regeln)
 
 ## Angular [Architektur](https://t3n.de/magazin/datenmodellierung-angular-architektur-angluar-applikation-242317/)
 Angular ist durch Komponenten aufgebaut, welche sich kombinieren lassen. 
