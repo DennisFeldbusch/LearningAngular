@@ -136,7 +136,7 @@ Was muss ich tun um eine neue API einzubinden bzw eine neue Seite zu erstellen?
 5. eine Methode in der Component schreiben, welche den service aufruft `this.tableService.getData()` und in der subscribtion die gewünschte variable zuweist
 6. in der HTML Datei der Component die gewünschten Elemente erstellen (z.B. Tabelle, Liste, etc. siehe [Angular Material](https://material.angular.io/components/table/overview)) 
 7. in der `app-routing.module.ts` die Component mit dem gewünschten Pfad eintragen `{path: 'table', component: TableComponent}`, damit sie erreichbar ist
-8. OPTIONAL: den link in der Menu HTML eintragen, dass die Seite dort aufrufbar ist
+8. OPTIONAL: den link in der Menu HTML eintragen, dass die Seite von dort aus aufrufbar ist
 
 ## Wichtige Angular Befehle
 https://angular.io/cli#command-overview
